@@ -7,7 +7,7 @@ WORKDIR /app
 COPY go.mod ./
 RUN go mod download
 
-COPY ./server.go ./
+COPY server.go ./
 
 RUN go build -o /static-server
 
